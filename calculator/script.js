@@ -12,8 +12,6 @@ nums.addEventListener('click', function(event) {
     if (target.classList.contains('clear')) {
         input.value = '';
     } else {
-        num = operators.includes(num) ? num : parseInt(target.innerHTML).toString();
-        num = isNaN(num) && !operators.includes(num) ? '' : num;
         input.value += num;
     }
 })
@@ -35,6 +33,6 @@ function decide() {
     try {
         input.value = eval(input.value);
     } catch (SyntaxError) {
-        input.value = undefined;
+        input.value = 'Ошибка!';
     }
 }
