@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    border-bottom: 4px solid rgb(253, 193, 29);
+    font-size: 12px;
+}
+
+.header-inner {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Comfortaa', cursive;
+}
+
+.header-inner h1 {
+    font-size: 2.5em;
+}
+
+.header-inner h1 i {
+    color: rgb(253, 193, 29);
+}
+
+.header-inner i {
+    font-family: 'FontAwesome';
+}
+
+/* Search */
+
+.search {
+    position: relative;
+}
+
+.search input {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.2em;
+    width: 320px;
+    outline: none;
+    border-radius: 30px;
+    border: 1px solid rgb(220, 220, 220);
+    padding: 10px;
+    transition: .3s;
+}
+
+.search input:focus {
+    box-shadow: 0px 0px 3px 1px rgba(253, 193, 29, 0.8);
+}
+
+.search i {
+    font-size: 1.4em;
+    position: absolute;
+    right: 10px;
+    top: 25%;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.search i:hover {
+    color: rgb(253, 193, 29);
+}
+
+/* Images */
+
+.images {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 10px;
+}
+
+.img {
+    cursor: pointer;
+    width: 365px;
+    height: 210px;
+    border-radius: 2px;
+    background-image: url(porshe.jfif);
+    background-size: cover;
+    background-position: center center;
+    transition: .2s;
+}
+
+.img:hover {
+    opacity: .8;
+}
+
+@media(max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+
+@media(max-width: 480px) {
+     .search input {
+        width: 100%;
+    }
+
+    .images {
+        width: 100%;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    header {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: radial-gradient(ellipse at center, #06BDC1, #68469F);
+}
+
+.container {
+    width: 65%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Quote */
+
+.quote-block {
+    border: 1px solid black;
+    min-width: 100px;
+    width: 90%;
+    max-width: 900px;
+    min-height: 400px;
+    border: 8px solid #06BDC1;
+    border-radius: 10px;
+    background: #F4EDEA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 7px black;
+}
+
+.quote {
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    width: 90%;
+}
+
+/* Author */
+
+.author {
+    margin-top: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+/* Button */
+
+button {
+    color: #fff;
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    background-color: #02b6b9;
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+button:hover {
+    background-color: #138496;
+    cursor: pointer;
+}
+
+
+/* Media Quote */
+
+@media(max-width: 480px) {
+    .quote {
+        font-size: 20px;
+    }
+
+    .author {
+        font-size: 28px;
+    }
+}

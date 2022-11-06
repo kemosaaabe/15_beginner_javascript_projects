@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #E22865, #37ADCD);
+}
+
+.container {
+    font-size: 12px;
+    width: 85%;
+    min-height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+header h2 {
+    font-size: 2.6em;
+    color: #fff;
+    font-family: 'Fredoka One', cursive;
+}
+
+header h2 i {
+    font-family: 'FontAwesome';
+}
+
+header .input {
+    display: flex;
+    flex-basis: 350px;
+}
+
+header input {
+    border: 1px solid rgb(220, 220, 220);
+    width: 80%;
+    border-radius: 5px 0 0 5px;
+    padding: 0 8px;
+    transition: .4s ease;
+}
+
+header input:focus {
+    outline: none;
+    border-color:#E22865;
+    box-shadow: 0px 0px 4px 0px #E22865;
+}
+
+header button {
+    border: 1px solid rgb(220, 220, 220);
+    width: 20%;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Container Inner */
+
+.container_inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-family: 'Rubik', sans-serif;
+    padding-top: 10px;
+}
+
+.item {
+    background: #fff;
+    align-self: center;
+    font-size: 1.5em;   
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid rgb(235, 235, 235);
+    transition: .4s ease;
+}
+
+.item:hover {
+    box-shadow: 0px 0px 8px 1px #E22865;
+    border-color:#E22865;
+}
+
+.item .icons {
+    display: flex;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: rgb(194, 194, 194);
+}
+
+.item i {
+    cursor: pointer;
+}
+
+.done {
+    color: green;
+}
+
+@media(max-width: 768px) {
+    header {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    header input {
+        padding: 10px 8px;
+    }
+
+    .item {
+        width: 100%;
+    }
+}

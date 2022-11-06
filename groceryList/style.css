@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFA500;
+}
+
+.container {
+    min-height: 100vh;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 12px 3px 25px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+}
+
+.grocery {  
+    font-family: 'Caveat', cursive;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 10px;
+}
+
+.grocery h1 {
+    font-size: 5.5em;
+    font-weight: 700;
+}
+
+/* Input and Icon */
+
+.enter {
+    margin-top: 5px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.enter input {
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 3em;
+    border: none;
+    border-bottom: 3px solid rgb(195, 195, 195);
+    width: 80%;
+}
+
+.enter input:focus {
+    outline: none;
+}
+
+.enter i {
+    font-family: 'FontAwesome';
+    color: pink;
+    font-size: 4em;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* Items */
+
+.items {
+    align-self: flex-start;
+    font-size: 3em;
+    margin-top: 1em;
+    user-select: none;
+}
+
+.items h2 {
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.items span {
+    cursor: pointer;
+}
+
+.line {
+    text-decoration: line-through;
+}
+
+@media(max-width: 768px) {
+    .grocery {
+        font-size: 7px;
+    }
+}
+
+@media(max-width: 480px) {
+    .grocery {
+        font-size: 5px;
+    }
+}
+

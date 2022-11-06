@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Poor+Story&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right top, #8F4DEC, #763C86);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.container h1 {
+    text-align: center;
+    /* font-family: 'Poor Story', cursive; */
+    font-family: 'Marck Script', cursive;
+    letter-spacing: 1px;
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.glimmer-square {
+    animation: glimmer .5s ease infinite alternate;
+}
+
+@keyframes glimmer {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@media(max-width: 480px) {
+    .container {
+        font-size: 10px;
+    }
+}

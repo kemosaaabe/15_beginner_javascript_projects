@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dddddd;
+}
+
+/* Header */
+
+header {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 12px;
+    background: rgb(237, 69, 69);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+}
+
+header h2 {
+    font-size: 2.5em;
+}
+
+header h2 i {
+    font-family: 'FontAwesome';
+    font-size: 0.9em;
+}
+
+/* Header nav */
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.8em;
+}
+
+header nav a:focus {
+    outline: none;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Active link */
+
+.active {
+    border-bottom: 5px solid #fff;
+}
+
+/* Main container */
+
+.wrapper {
+    padding: 7px 9px;
+}
+
+.container {
+    display: flex;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 24px;
+    gap: 8px;
+    align-items: stretch;
+}
+
+.expression {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.5);
+    flex-grow: 4;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+}
+
+.answers {
+    gap: 8px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 6.5em;
+}
+
+.answer {
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.5);
+    flex-grow: 1;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media(max-width: 1024px) {
+    .container {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 768px) {
+    .answers {
+        font-size: 5em;
+    }
+
+    header {
+        justify-content: center;
+        flex-direction: column;
+        font-size: 10px;
+    }
+
+    .expression {
+        font-size: 6vw;
+    }
+}
+
+@media(max-width: 480px) {
+    .answers {
+        font-size: 2em;
+    }
+
+    header {
+        justify-content: center;
+        font-size: 9px;
+    }
+
+    .expression {
+        gap: 15px;
+    }
+}

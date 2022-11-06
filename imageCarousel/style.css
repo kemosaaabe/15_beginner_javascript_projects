@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.images {
+    position: relative;
+}
+
+/* Arrows */
+
+.prev, .next {
+    color: #fff;
+    position: absolute;
+    font-weight: 900;
+    top: 45%;
+    font-size: 18px;
+    padding: 15px 15px;
+    transition: .2s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.prev:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.next:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+    left: 0;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.next {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    right: 0;
+}
+
+/* Dots */
+
+.dots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.dot {
+    display: block;
+    width: 17px;
+    border-radius: 50%;
+    background: #BBBBBB;
+    height: 17px;
+    margin-right: 10px;
+}
+
+.active {
+    background: #717171;
+}
+
+/* Image */
+
+.img {
+    display: none;
+}
+
+.img img {
+    width: 100%;
+}
+
+.fade {
+    animation: fade .8s ease;
+}
+
+@keyframes fade {
+    0% {
+        opacity: .5;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
